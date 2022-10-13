@@ -70,7 +70,7 @@ std::vector<float> desiredState(structure.at(-1));
 3) Initialize these objects.
 Each layers transition is represented by a matrix, which entries have to be initialized. 
 Typically, random number generation is used.
-```arduino
+```cpp
 setup()
 {
 
@@ -89,7 +89,7 @@ setup()
 ```
 
 4) Forward-propagate the new loop values
-```arduino
+```cpp
 loop()
 {
     // your loop ...
@@ -108,7 +108,7 @@ loop()
 ```
 
 4) Back-propagate the new loop values
-```arduino
+```cpp
     // your loop ...
 
     desiredState = {0.5};   // define your desired output
@@ -128,6 +128,6 @@ loop()
 
     // aL.at(-1) is the output of the neural network
     Serial.println(aL[2][0]);
-    
+
 } // end loop
 ```
