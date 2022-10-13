@@ -1,0 +1,7 @@
+src
+include
+examples
+.vscode
+build/*
+!build/BPNN
+CMakeLists.txt
